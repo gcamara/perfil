@@ -1,0 +1,164 @@
+.mover {
+    left: 0%;
+    opacity: 0;
+    position: absolute;
+    -webkit-animation: esquerda-direita .1s .1s ease-out;
+    animation: esquerda-direita .1s .1s ease-out;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes esquerda-direita {
+    100% {
+        opacity: 1;
+        left: 100%;
+    }
+}
+@keyframes esquerda-direita {
+    100% {
+        opacity: 1;
+        left: 100%;
+    }
+}
+
+.mover-subtitulo {
+	font-size: 1.5em;
+    left: 0%;
+    margin-top: 140px;
+    opacity: 0;
+    position: absolute;
+    width: 17em;
+    -webkit-animation: esquerda-direita-sub .1s .1s ease-out;
+    animation: esquerda-direita-sub .5s .5s ease-out;
+    animation-duration: 1.5s;
+    word-wrap: break-word;
+    -webkit-animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes esquerda-direita-sub {
+    100% {
+        opacity: 1;
+        left: calc(100% - 9.5em);
+    }
+}
+
+@keyframes esquerda-direita-sub {
+    100% {
+        opacity: 1;
+        left: calc(100% - 9.5em);
+    }
+}
+
+.aparecer-trabalhos {
+	margin-top: 10%;
+    opacity: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    display: inline-flex;
+    -webkit-animation: animacao-topo .1s .1s ease-out;
+    animation: animacao-topo .5s .5s ease-out;
+    animation-duration: 1.5s;
+    word-wrap: break-word;
+    -webkit-animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animacao-topo {
+    100% {
+        opacity: 1;
+        margin-top: 0%;
+    }
+}
+
+@keyframes animacao-topo {
+    100% {
+        opacity: 1;
+        margin-top: 0%;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 3px 0px grey;
+}
+
+hr {
+    width: 0;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    -webkit-animation: linha .1s .1s ease-out;
+    animation: linha .3s .3s ease-out;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes linha {
+    100% {
+        width: 300px;
+    }
+}
+
+@keyframes linha {
+    100% {
+        width: 300px;
+    }
+}
+
+.secao {
+    opacity: 0;
+    position: relative;
+    top: 0;
+    text-align: center;
+    -webkit-animation: secao-animacao .1s .1s ease-out;
+    animation: secao-animacao .1s .1s ease-out;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes secao-animacao {
+    100% {
+        opacity: 1;
+        top: 20px;
+    }
+}
+
+@keyframes secao-animacao {
+    100% {
+        opacity: 1;
+        top: 20px;
+    }
+}
+
+.foto {
+    opacity: 0;
+    -webkit-animation: foto-animacao .1s .1s ease-out;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation: foto-animacao .1s .1s ease-out;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes foto-animacao {
+    100% {
+        opacity: 1;
+        left: 200px;
+    }
+}
+
+@keyframes foto-animacao {
+    100% {
+        opacity: 1;
+        left: 200px;
+    }
+}

@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>Teste</title>
+		<link rel="shortcut icon" href="">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/animacoes.css">
+	</head>
+	
+	<body ng-app="app" ng-controller="MainController as main">
+		<div style="position: relative">
+			<div class="jumbo-bg"></div>
+			<div class="jumbotron">
+				<div style="position: absolute; width: 80%;">
+					<div class="mover">
+						<h1>Título</h1>
+					</div>	
+					<div class="mover-subtitulo">
+						Subtítulo com texto maior para testar
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="padding-bottom: 150px; margin-top: -20px">
+			<div class="secao">
+				<h2>Projetos</h2>
+				<hr>
+			</div>
+
+			<div style="position: relative; height: 250px">
+				<div class="aparecer-trabalhos">
+
+					<div style="margin: auto; display: inline-flex;">
+						<!-- Sistemas Operacionais -->
+						<div class="card">
+							<div class="imagem processador">
+							</div>
+							<h4>Sistemas Operacionais</h4>
+							<h6>
+								Trabalho criado para uma disciplina de sistemas operacionais. Consiste em executar algorítmos de escalonamento 
+								<b>Round Robin, LTG e Interval-based Schedule</b>. <br/>
+								Bem como exemplificar os algorítmos de memória
+								<b>Best, Quick e Merge Fit</b>.
+								<div id="tags" style="margin-top: 20px;">
+								Tecnologias:
+									<div style="margin-top: 10px;">
+										<span class="tag">AngularJS</span>
+										<span class="tag">JS</span>
+										<span class="tag">CSS3</span>
+										<span class="tag">HTML5</span>
+										<span class="tag">Bootstrap</span>
+									</div>
+								</div>
+							</h6>
+						</div>
+
+						<!-- OWL Mobile -->
+						<div class="card">
+							<div class="imagem owl">
+							</div>
+							<h4>OWL Mobile</h4>
+							<h6>
+								Aplicativo criado em 2014 para consultar os dados do aluno da Universidade de Fortaleza.
+								Possuía funcionalidades como <b>Mapa, Próximas aulas, Visualização de Torpedos e etc..</b><br/>
+								Atualmente o aplicativo encontra-se descontinuado, pois a Universidade desenvolveu o seu próprio.
+								<div id="tags" style="margin-top: 20px;">
+								Tecnologias:
+									<div style="margin-top: 10px;">
+										<span class="tag">Java</span>
+										<span class="tag">Eclipse</span>
+										<span class="tag">Adobe Photoshop</span>
+									</div>
+								</div>
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sobre">
+			<div class="secao">
+				<h2>Sobre</h2>
+				<hr/>
+			</div>
+			<div class="foto foto-perfil"></div>
+
+		</div>
+
+		<div class="footer">
+			<div><img src="/imgs/linkedin.png" width="24" height="24"> Linkedin</div>
+			<div><img src="/imgs/facebook.png" width="24" height="24"> Facebook</div>
+			<div><img src="/imgs/email.png" width="24" height="24"> gabriel.camarac@gmail.com</div>
+		</div>
+
+		<script src="js/jquery/jquery-2.2.1.min.js"></script>
+		<script src="js/angular/angular.min.js"></script>
+		<script src="js/angular/angular-resource.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/controllers/controllerPrincipal.js"></script>
+	</body>
+</html>

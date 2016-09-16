@@ -1,0 +1,135 @@
+h1 {
+    margin-top: 80px;
+    z-index: 1;
+}
+
+.jumbo-bg {
+  background: url('/imgs/bg_blueplane.jpg') repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbo-container {
+    padding: 0 10px;
+}
+
+.jumbotron {
+    background: transparent;
+    color: white;
+    text-shadow: #444 0 1px 1px;
+    height: 350px;
+    margin-bottom: 0;
+}
+
+.jumbotron > h1 {
+    color: white;
+}
+
+.menu {
+    background-color: rgb(30, 200, 255);
+    border-radius: 10px;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.conteudo-central {
+    background-color: rgb(30, 200, 255);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    margin-top: 10px;
+    border: 1px #d3d3d3 solid;
+    min-height: 250px;
+    padding: 20px;
+    min-width: 350px;
+    margin-right: 20px;
+    transition: all .2s ease-in-out;
+    background: white;
+    max-width: 350px;
+}
+.imagem {
+    border-radius: 150px;
+    box-shadow: 0 1px 1px 0px grey;
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.processador {
+    background: url('/imgs/gpu-processor-icon.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer {
+    height: 120px;
+    background: black;
+    width: 100%;
+    top: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: white;
+}
+
+.sobre {
+    margin-top: -20px;
+    position: relative;
+    box-shadow: inset 0 2px 5px 0px rgba(0,0,0,.5);
+    background: url('/imgs/retina_wood.png');
+    width: 100%;
+    height: 450px;
+}
+
+.footer > div {
+    margin-top: 5px;
+}
+
+.teste {
+    height: 400px;
+}
+
+.foto {
+    position: absolute;
+    left: 0;
+    border-radius: 150px;
+    box-shadow: 0 1px 1px 0px grey;
+    width: 300px;
+    height: 300px;
+}
+
+.foto-perfil {
+    background: url('/imgs/perfil.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tag {
+    background: rgb(140, 140, 140);
+    border: #d3d3d3 1px solid;
+    border-radius: 5px;
+    color: white;
+    font-size: .9em;
+    padding: 5px;
+}
+
+.owl {
+    background: url('/imgs/owl.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h6 {
+    text-align: justify;
+}
