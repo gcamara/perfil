@@ -211,6 +211,10 @@ h2 {
     color: white;
 }
 
+.footer div {
+    margin-top: 5px;
+}
+
 .progress{
     height: 4px;
     overflow: hidden;
@@ -223,6 +227,7 @@ h2 {
     width: 45%;
 }
 
+
 @media screen and (min-width: 768px) {
     .sobre {
         height: 750px;
@@ -232,3 +237,4 @@ h2 {
         margin-left: 12%;
     }
 }
+
