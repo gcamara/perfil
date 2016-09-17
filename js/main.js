@@ -8,4 +8,15 @@
 	$(window).scroll(function(e){
 	    parallax();
 	});
+	
+	var trabalhoSO = $('#trabalho-so');
+	var trabalhoOWL = $('#trabalho-owl');
+
+	trabalhoSO.on('click', function() {
+		window.open('/so');
+	})
+
+	trabalhoOWL.on('click', function() {
+		window.open('https://play.google.com/store/apps/details?id=br.owl.activity&hl=pt_BR');
+	});
 })();

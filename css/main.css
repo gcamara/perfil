@@ -44,8 +44,6 @@ h1 {
 
 .card {
     margin-top: 10px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
     border-radius: 5px;
     border: 1px #d3d3d3 solid;
     min-height: 250px;
