@@ -1,5 +1,6 @@
 .mover {
     left: 0%;
+    width: 100em;
     opacity: 0;
     position: absolute;
     -webkit-animation: esquerda-direita .1s .1s ease-out;
@@ -10,16 +11,10 @@
     -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes esquerda-direita {
-    100% {
-        opacity: 1;
-        left: 100%;
-    }
-}
 @keyframes esquerda-direita {
     100% {
         opacity: 1;
-        left: 100%;
+        left: calc(100% - 42em);
     }
 }
 
@@ -33,17 +28,9 @@
     -webkit-animation: esquerda-direita-sub .1s .1s ease-out;
     animation: esquerda-direita-sub .5s .5s ease-out;
     animation-duration: 1.5s;
-    word-wrap: break-word;
     -webkit-animation-duration: 1.5s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes esquerda-direita-sub {
-    100% {
-        opacity: 1;
-        left: calc(100% - 9.5em);
-    }
 }
 
 @keyframes esquerda-direita-sub {
@@ -54,7 +41,7 @@
 }
 
 .aparecer-trabalhos {
-	margin-top: 10%;
+	margin-top: 2%;
     opacity: 0;
     flex-wrap: wrap;
     width: 100%;
@@ -161,4 +148,30 @@ hr {
         opacity: 1;
         left: 200px;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .mover {
+        width: 550px;
+        font-size: 3em;
+    }
+
+    @keyframes esquerda-direita {
+        100% {
+            opacity: 1;
+            left: calc(100% - 10em);
+        }
+    }
+
+    @keyframes esquerda-direita-sub {
+        100% {
+            opacity: 1;
+            left: calc(100% - 12.5em);
+        }
+    }
+
+    .mover-subtitulo {
+        margin-top: 60px;
+    }
+
 }

@@ -1,28 +1,55 @@
 <html>
+	<meta charset="UTF-8">
 	<head>
-		<title>Teste</title>
+		<title>Portfolio :: Gabriel Câmara Carvalho</title>
 		<link rel="shortcut icon" href="">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/animacoes.css">
 	</head>
 	
-	<body ng-app="app" ng-controller="MainController as main">
+	<body>
 		<div style="position: relative">
 			<div class="jumbo-bg"></div>
 			<div class="jumbotron">
 				<div style="position: absolute; width: 80%;">
-					<div class="mover">
-						<h1>Título</h1>
-					</div>	
+					<span class="mover">
+						Gabriel Câmara Carvalho
+					</span>
 					<div class="mover-subtitulo">
-						Subtítulo com texto maior para testar
+						Desenvolvedor, Analista e gamer..
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div style="padding-bottom: 150px; margin-top: -20px">
+		<div class="sobre">
+			<div class="secao">
+				<h2><b>Sobre Mim</b></h2>
+				<hr/>
+			</div>
+			<div>
+				<div class="aparecer-trabalhos">
+					<div style="margin: auto; display: inline-block">
+						<div class="foto foto-perfil"></div>
+						<div style="width: 100%; display: inline-flex; margin-left: auto;">
+							<div style="margin-left: 20%; width: 50%">
+								<h2><b>E aí?</b></h2>
+								<div style="width: 50%;">
+									<p>Sou Gabriel Câmara Carvalho, desenvolvedor desde os 8 anos e apaixonado pelo que faz.
+									Já desenvolvi em várias tecnologias e estou no mercado há cerca de 5 anos, tendo deixado um bom legado com os clientes que trabalhei.</p>
+								</div>
+							</div>
+							<div class="skills">
+								<h2><b>Skills</b></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="padding-bottom: 150px; margin-top: -20px; background-color: #f7f7f7;">
 			<div class="secao">
 				<h2>Projetos</h2>
 				<hr>
@@ -37,7 +64,7 @@
 						    <div class="imagem processador">
 						    </div>
 						    <h4>Sistemas Operacionais</h4>
-						    <h6>
+						    <h6 class="textos">
 						        Trabalho criado para uma disciplina de sistemas operacionais. Consiste em executar algorítmos de escalonamento 
 						        <b>Round Robin, LTG e Interval-based Schedule</b>. <br/>
 						        Bem como exemplificar os algorítmos de memória
@@ -59,7 +86,7 @@
 						    <div class="imagem owl">
 						    </div>
 						    <h4>OWL Mobile</h4>
-						    <h6>
+						    <h6 class="textos">
 						        Aplicativo desenvolvido para oferecer serviços aos alunos de uma universidade. Dentre eles: <b>mapa da universidade, acesso às mensagens, disciplinas, horários, cálculo de semestralidade e notificações</b>. Atualmente o aplicativo está fora do ar, pois era uma iniciativa pessoal e a universidade optou por desenvolver um próprio.
 						        <div id="tags" style="margin-top: 20px;">
 						        Tecnologias:
@@ -77,29 +104,28 @@
 			</div>
 		</div>
 
-		<div class="sobre">
+		<div class="certificacoes">
 			<div class="secao">
-				<h2>Sobre</h2>
-				<hr/>
+				<h2>Certificações</h2>
+				<hr>
+				<div style="width: 100%; position: relative">
+					<div style="margin-left: auto; margin-right: auto;">
+						<div style="position: absolute; left: 55%; top: -10%">
+							<img src="/perfil/imgs/badge.png" width="45px" height="42px" >
+						</div>
+						<img style="border: 1px solid #d3d3d3; padding: 20px" src="/perfil/imgs/ocjp.jpg" width="240px" height="160px" >
+					</div>
+				</div>
 			</div>
-			<div class="foto foto-perfil"></div>
-			<div class="informacoes">
-				Nome: Gabriel Câmara Carvalho<br/>
-				Nascimento: 24/03/1990
-			</div>
-			
 		</div>
 
 		<div class="footer">
-			<div><img src="imgs/linkedin.png" width="24" height="24"> Linkedin</div>
-			<div><img src="imgs/facebook.png" width="24" height="24"> Facebook</div>
-			<div><img src="imgs/email.png" width="24" height="24"> gabriel.camarac@gmail.com</div>
+			<div><a href=""><img src="imgs/linkedin.png" width="24" height="24"> Linkedin</div></a>
+			<div><a><img src="imgs/facebook.png" width="24" height="24"> Facebook</div></a>
+			<div><a><img src="imgs/email.png" width="24" height="24"> gabriel.camarac@gmail.com</div></a>
 		</div>
 
 		<script src="js/jquery/jquery-2.2.1.min.js"></script>
-		<script src="js/angular/angular.min.js"></script>
-		<script src="js/angular/angular-resource.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/controllers/controllerPrincipal.js"></script>
 	</body>
 </html>
