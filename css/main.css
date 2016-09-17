@@ -84,12 +84,6 @@ h1 {
     height: 650px;
 }
 
-@media screen and (min-width: 768px) {
-    .sobre {
-        height: 750px;
-    }
-}
-
 .projetos {
     background:
             linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
@@ -222,4 +216,19 @@ h2 {
     overflow: hidden;
     background-color: #eee;
     margin-bottom: 35px;
+}
+
+.texto-eai {
+    margin-left: 20%;
+    width: 45%;
+}
+
+@media screen and (min-width: 768px) {
+    .sobre {
+        height: 750px;
+    }
+
+    .texto-eai {
+        margin-left: 12%;
+    }
 }
