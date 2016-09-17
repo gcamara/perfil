@@ -87,7 +87,7 @@ h1 {
     box-shadow: inset 0 2px 5px 0px rgba(0,0,0,.5);
     background: white;
     width: 100%;
-    height: 600px;
+    height: 650px;
 }
 
 .textos {
@@ -96,7 +96,7 @@ h1 {
 }
 
 .skills {
-    margin-left: 40px;
+    width: 25%;
 }
 
 .footer > div {
@@ -198,4 +198,31 @@ h2 {
 @font-face {
     font-family: 'Generica';
     src: url('/perfil/fonts/Generica.otf');
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.progress{
+    height: 4px;
+    overflow: hidden;
+    background-color: #eee;
+    margin-bottom: 35px;
 }
