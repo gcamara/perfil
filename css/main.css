@@ -29,13 +29,6 @@ h1 {
     color: white;
 }
 
-.menu {
-    background-color: rgb(30, 200, 255);
-    border-radius: 10px;
-    height: 100%;
-    padding-right: 10px;
-}
-
 .conteudo-central {
     background-color: rgb(30, 200, 255);
     height: 100%;
@@ -219,24 +212,9 @@ h2 {
     src: url('/perfil/fonts/Generica.otf');
 }
 
-a:link {
+.footer a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: white;
-}
-
-a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-a:active {
-    color: white;
-    text-decoration: none;
 }
 
 .progress{
