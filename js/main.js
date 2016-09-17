@@ -19,4 +19,14 @@
 	trabalhoOWL.on('click', function() {
 		window.open('https://play.google.com/store/apps/details?id=br.owl.activity&hl=pt_BR');
 	});
+
+	var botoes = ['sobre', 'projetos', 'certificacoes'];
+	botoes.forEach(function(botao) {
+		$('#'+botao+'-menu').click(function () {
+			$('html, body').animate({
+				scrollTop: $('#'+botao).offset().top
+			}, 2000);
+		});
+	});
+	
 })();
