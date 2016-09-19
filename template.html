@@ -6,12 +6,6 @@
 		<li><a id="certificacoes-menu" href="#">{{ main.certificacoes }}</a></li>
 		<li><a id="hobbies-menu" href="#">{{ main.hobbies }}</a></li>
 	</ul>
-	<div style="display: inline-block;">
-		<button ng-click="main.trocar('pt')" class="icone icone-portugues"></button>
-		<button ng-click="main.trocar('en')" class="icone icone-ingles"></button>
-		<button ng-click="main.trocar('es')" class="icone icone-espanhol"></button>
-		<button ng-click="main.trocar('fr')" class="icone icone-frances"></button>
-	</div>	
 </nav>
 <div style="position: relative">
 	<div class="jumbo-bg"></div>
@@ -25,6 +19,14 @@
 			</div>
 		</div>
 	</div>
+	<div style="position: relative; width: 100%;">
+		<div class="idiomas-wrapper">
+			<button ng-click="main.trocar('pt')" class="icone icone-portugues"></button>
+			<button ng-click="main.trocar('en')" class="icone icone-ingles"></button>
+			<button ng-click="main.trocar('es')" class="icone icone-espanhol"></button>
+			<button ng-click="main.trocar('fr')" class="icone icone-frances"></button>
+		</div>	
+	</div>
 </div>
 
 <div id="sobre" class="sobre">
@@ -35,7 +37,7 @@
 	<div>
 		<div class="aparecer-trabalhos">
 			<div style="margin: auto; display: inline-block">
-				<!--<div class="foto foto-perfil"></div>-->
+				<div class="foto foto-perfil"></div>
 				<div style="width: 100%; display: inline-flex; margin-left: auto;">
 					<div class="texto-eai">
 						<h2><b>{{main.eai}}</b></h2>
