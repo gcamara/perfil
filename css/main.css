@@ -4,7 +4,7 @@ h1 {
 }
 
 .jumbo-bg {
-  background: url('/perfil/imgs/rubik_.png') repeat center center;
+  background: url('/perfil/imgs/rubik_.png') center center;
   position: fixed;
   width: 100%;
   height: 350px;

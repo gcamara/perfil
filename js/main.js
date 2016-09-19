@@ -22,7 +22,9 @@
 
 	var botoes = ['sobre', 'projetos', 'certificacoes', 'hobbies'];
 	botoes.forEach(function(botao) {
-		$('#'+botao+'-menu').click(function () {
+		$('#'+botao+'-menu').click(function (event) {
+			event.preventDefault();
+			event.stopImmediatePropagation();
 			$('html, body').animate({
 				scrollTop: $('#'+botao).offset().top
 			}, 2000);
