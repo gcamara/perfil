@@ -227,14 +227,174 @@ h2 {
     width: 45%;
 }
 
+.hobbies {
+    height: 450px;
+    background-color: #22313F;
+    background-size: 20px 20px;
+}
 
-@media screen and (min-width: 768px) {
+.hobbies h2 {
+    color: white;
+}
+
+.medalha {
+    position: absolute;
+    top: -10%;
+}
+
+.titulo-hobby {
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 150px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    margin-bottom: 10px;
+    font-family: Generica;
+    font-size: 1.5em;
+}
+
+.starwars-texto {
+    background: #7c8491;
+    color: white;
+} 
+.pizza-texto {
+    color: white;
+    background-color: #ffd504;
+}
+
+.netflix-texto {
+    background: #B9090B;
+    color: white;
+}
+
+.coding-texto {
+    color: white;
+    background: #b2b2bf;
+}
+
+.bilingue-texto {
+    background: #2C3E50;
+    color: white;
+}
+
+.starwars {
+    background: url('/perfil/imgs/starwars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+}
+
+.coding {
+    background: url('/perfil/imgs/codeicon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.netflix {
+    background: url('/perfil/imgs/netflix.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.pizza {
+    background: url('/perfil/imgs/pizza.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ffd504;
+    background-position: center;
+}
+
+.bilingue {
+    background: url('/perfil/imgs/linguas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2C3E50;
+    background-position: center;
+}
+
+
+.descricao-hobbie {
+    position: relative;
+    width: 70%;
+    min-height: 80px;
+    padding: 10px;
+    background: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -ms-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    transition: opacity .5s ease-out;
+    margin-left: -50px;
+}
+
+
+.hobby {
+    width: 250px;
+    display: inline;
+}
+
+.wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.imagem-hobby {
+    border-radius: 150px;
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.imagem-hobby:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (min-width: 768px) {
     .sobre {
-        height: 750px;
+        height: 850px;
     }
 
     .texto-eai {
         margin-left: 12%;
     }
+
+    .medalha {
+        left: 60%;
+    }
 }
 
+@media only screen and (min-width: 1024px) {
+    .medalha {
+        left: 55%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .medalha {
+        left: 55%;
+    }
+}

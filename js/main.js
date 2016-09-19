@@ -20,7 +20,7 @@
 		window.open('https://play.google.com/store/apps/details?id=br.owl.activity&hl=pt_BR');
 	});
 
-	var botoes = ['sobre', 'projetos', 'certificacoes'];
+	var botoes = ['sobre', 'projetos', 'certificacoes', 'hobbies'];
 	botoes.forEach(function(botao) {
 		$('#'+botao+'-menu').click(function () {
 			$('html, body').animate({
@@ -37,5 +37,23 @@
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));
 
+	$('[id^="desc-"]').css('display', 'none');
+
+	$('.imagem-hobby').hover(function() {
+		var texto = $(this).siblings("[id^='desc']").text();
+		$('.descricao-hobbie').text(texto);
+		$('.descricao-hobbie').css('opacity', '1');
+	}, function() {
+		$('.descricao-hobbie').css('opacity', '0');
+		$('.descricao-hobbie').text('');
+	});
+
+	function pegarId(campo) {
+		var desc = campo.siblings().attr('id');
+		desc = desc.replace('tit-', '');
+
+		var id = '#desc-'+desc;
+		return id;
+	}
 
 })();
