@@ -1,4 +1,4 @@
-<html>
+<html ng-app="portfolio">
 	<head>
 		<title>Portfolio :: Gabriel Câmara Carvalho</title>
 		<link rel="shortcut icon" href="">
@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/animacoes.css">
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/icone.css">
 
 		<meta charset="UTF-8">
 		<meta property="og:title" content="Portfolio"/>
@@ -20,221 +21,21 @@
 	</head>
 
 	<body>
-		<!-- Menu -->
-		<nav class="menu">
-			<ul>
-				<li><a id="sobre-menu" href="#">Sobre Mim</a></li>
-				<li><a id="projetos-menu" href="#">Projetos</a></li>
-				<li><a id="certificacoes-menu" href="#">Certificações</a></li>
-				<li><a id="hobbies-menu" href="#">Hobbies</a></li>
-			</ul>
-		</nav>
-		<div style="position: relative">
-			<div class="jumbo-bg"></div>
-			<div class="jumbotron">
-				<div style="position: absolute; width: 80%; margin-top: 20px">
-					<span class="mover">
-						Gabriel Câmara Carvalho
-					</span>
-					<div class="mover-subtitulo">
-						Desenvolvedor, Analista e gamer..
-					</div>
-				</div>
-			</div>
-		</div>
+		<ng-view>
 
-		<div id="sobre" class="sobre">
-			<div class="secao">
-				<h2>Sobre Mim</h2>
-				<hr/>
-			</div>
-			<div>
-				<div class="aparecer-trabalhos">
-					<div style="margin: auto; display: inline-block">
-						<div class="foto foto-perfil"></div>
-						<div style="width: 100%; display: inline-flex; margin-left: auto;">
-							<div class="texto-eai">
-								<h2><b>E aí?</b></h2>
-								<div style="width: 60%;">
-									<p>Sou Gabriel Câmara Carvalho, desenvolvedor desde os 8 anos e apaixonado pelo que faz.
-									Já desenvolvi em várias tecnologias e estou no mercado há cerca de 5 anos, tendo deixado um bom legado com os clientes que trabalhei.</p>
-									<p>Morei por dois meses no Chile - pra onde com certeza voltarei para visitar - e foi uma das melhores experiências que já tive. Além da língua, o país
-										tem muita coisa massa, muitos lugares pra visitar, só a comida que não é das melhores.
-									</p>
-									<p>Já pratiquei vários Judô, Jiu-jitsu e vôlei e hoje divido meu tempo entre trabalho, graduação e curso de francês e espanhol aos sábados.</p>
-								</div>
-							</div>
-							<div class="skills">
-								<h2><b>Principais Skills</b></h2>
-								<div>
-									<h5>
-										Java
-										<span class="pull-right">93%</span>
-									</h5>
-									<div class="progress">
-										<div class="progress-bar" style="width: 93%"></div>
-									</div>
-								</div>
-								<div>
-									<h5>
-										AngularJS
-										<span class="pull-right">60%</span>
-									</h5>
-									<div class="progress">
-										<div class="progress-bar" style="width: 60%"></div>
-									</div>
-								</div>
-								<div>
-									<h5>
-										Javascript
-										<span class="pull-right">65%</span>
-									</h5>
-									<div class="progress">
-										<div class="progress-bar" style="width: 65%"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="projetos" class="projetos" style="padding-bottom: 150px; margin-top: -20px;">
-			<div class="secao">
-				<h2 style="color:white">Projetos</h2>
-				<hr>
-			</div>
-
-			<div style="position: relative; height: 250px">
-				<div class="aparecer-trabalhos">
-
-					<div style="margin: auto; display: inline-flex;">
-						<!-- Sistemas Operacionais -->
-						<div id="trabalho-so" class="card">
-						    <div class="imagem processador">
-						    </div>
-						    <h4>Sistemas Operacionais</h4>
-						    <h6 class="textos">
-						        Trabalho criado para uma disciplina de sistemas operacionais. Consiste em executar algorítmos de escalonamento
-						        <b>Round Robin, LTG e Interval-based Schedule</b>. <br/>
-						        Bem como exemplificar os algorítmos de memória
-						        <b>Best, Quick e Merge Fit</b>.
-						        <div id="tags" style="margin-top: 20px;">
-						        Tecnologias:
-						            <div style="margin-top: 10px;">
-						                <span class="tag tag-angular">AngularJS</span>
-						                <span class="tag tag-js">JS</span>
-						                <span class="tag tag-css3">CSS3</span>
-						                <span class="tag tag-html5">HTML5</span>
-						                <span class="tag tag-bootstrap">Bootstrap</span>
-						            </div>
-						        </div>
-						    </h6>
-						</div>
-						<!-- OWL Mobile -->
-						<div id="trabalho-owl" class="card">
-						    <div class="imagem owl">
-						    </div>
-						    <h4>OWL Mobile</h4>
-						    <h6 class="textos">
-						        Aplicativo desenvolvido para oferecer serviços aos alunos de uma universidade. Dentre eles: <b>mapa da universidade, acesso às mensagens, disciplinas, horários, cálculo de semestralidade e notificações</b>. Atualmente o aplicativo está fora do ar, pois era uma iniciativa pessoal e a universidade optou por desenvolver um próprio.
-						        <div id="tags" style="margin-top: 20px;">
-						        Tecnologias:
-						            <div style="margin-top: 10px;">
-						                <span class="tag tag-java">Java</span>
-						                <span class="tag tag-android">Android</span>
-						                <span class="tag tag-eclipse">Eclipse</span>
-						                <span class="tag tag-ps">Adobe Photoshop</span>
-						            </div>
-						        </div>
-						    </h6>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="certificacoes" class="certificacoes">
-			<div class="secao">
-				<h2>Certificações</h2>
-				<hr>
-				<div style="width: 100%; position: relative">
-					<div style="margin-left: auto; margin-right: auto;">
-						<div class="medalha">
-							<img src="/perfil/imgs/badge.png" width="45px" height="42px" >
-						</div>
-						<img style="border: 1px solid #d3d3d3; padding: 20px" src="/perfil/imgs/ocjp.jpg" width="240px" height="160px" >
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="hobbies" class="hobbies">
-			<div class="secao">
-				<h2>Hobbies</h2>
-				<hr>
-				<div style="width: 100%; position: relative;">
-					<div class="wrapper">
-						<div class="hobby">
-							<div id="tit-starwars" class="titulo-hobby starwars-texto">Starwars</div>
-							<div class="imagem-hobby starwars"></div>
-							<div id="desc-starwars">Apesar de acompanhar a saga há pouco tempo,
-								é uma das minhas preferidas, tendo inclusive comprado alguns bonecos da coleção.
-								Quando você assiste a um filme antigo e se impressiona com os efeitos especiais da época,
-								você acaba se colocando na posição de quem estava assistindo à epoca e... acreditem, isso me fascinou na franquia.</div>
-						</div>
-						<div class="hobby">
-							<div id="tit-coding" class="titulo-hobby coding-texto">Programar</div>
-							<div class="imagem-hobby coding"></div>
-							<div id="desc-coding">Se eu tiver um tempo livre, ou estarei programando ou vendo netflix.</div>
-						</div>
-						<div class="hobby">
-							<div id="tit-netflix" class="titulo-hobby netflix-texto">Netflix</div>
-							<div class="imagem-hobby netflix"></div>
-							<div id="desc-netflix">Quem não?</div>
-						</div>
-						<div class="hobby">
-							<div id="tit-pizza" class="titulo-hobby pizza-texto">Pizza</div>
-							<div class="imagem-hobby pizza"></div>
-							<div id="desc-pizza">De pepperoni, frango c/ catupiry ou chocolate</div>
-						</div>
-						<div class="hobby">
-							<div id="tit-idiomas" class="titulo-hobby bilingue-texto">Idiomas</div>
-							<div class="imagem-hobby bilingue"></div>
-							<div id="desc-idiomas">Uma das coisas que descobri recentemente foi o gosto por aprender novas linguas. Além de Inglês e Espanhol, agora o desafio é o Francês.</div>
-						</div>
-					</div>
-					<div id="descricoes" class="wrapper">
-						<div class="descricao-hobbie textos">
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="footer">
-			<div class="pull-left">
-				<div><a href="https://www.linkedin.com/in/gabriel-carvalho-89286682"><img src="imgs/linkedin.png" width="24" height="24"> Linkedin</a></div>
-				<div><a href="https://www.facebook.com/Gabriel.CamaraC"><img src="imgs/facebook.png" width="24" height="24"> Facebook</a></div>
-				<div><a href="mailto:gabriel.camarac@gmail.com"><img src="imgs/email.png" width="24" height="24"> gabriel.camarac@gmail.com</a></div>
-			</div>
-			<div class="pull-right">
-				<div id="fb-root"></div>
-				<div class="fb-like"
-					 data-href="http://gcamara.github.io/perfil"
-					 data-layout="standard"
-					 data-action="like"
-					 data-size="small"
-					 data-show-faces="true"
-					 data-colorscheme="dark"
-					 data-share="true"></div>
-			</div>
-		</div>
-
-		<script src="js/jquery/jquery-2.2.1.min.js"></script>
-		<script src="js/main.js"></script>
+		</ng-view>
 	</body>
+
+	<script src="js/jquery/jquery-2.2.1.min.js"></script>
+	<script src="js/angular/angular.min.js"></script>
+	<script src="js/angular/angular-route.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/angular-main.js"></script>
+	<script src="js/services/pt-service.js"></script>
+	<script src="js/services/es-service.js"></script>
+	<script src="js/services/en-service.js"></script>
+	<script src="js/services/fr-service.js"></script>
+	<script src="js/services/main-service.js"></script>
+	<script src="js/controllers/main-controller.js"></script>
+	<script src="js/config.js"></script>
 </html>

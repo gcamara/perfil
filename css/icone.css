@@ -1,0 +1,31 @@
+.icone {
+	width: 24px;
+	height: 24px;
+	border-radius: 50px;
+	box-shadow: 0 5px 0px 2px;
+	box-shadow: 0 1px 1px 0px grey;
+	display: inline-flex;
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+button.icone {
+	border: none;
+}
+
+.icone-ingles {
+	background-image: url('/perfil/imgs/ic_eng.png');
+}
+
+.icone-portugues {
+	background-image: url('/perfil/imgs/ic_br.png');
+}
+
+.icone-espanhol {
+	background-image: url('/perfil/imgs/ic_es.png');
+}
+
+.icone-frances {
+	background-image: url('/perfil/imgs/ic_fr.png');
+}
