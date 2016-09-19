@@ -15,8 +15,9 @@
     transform: scale(1.05);
 }
 
-button.icone {
+button, button:hover, button:active, button:focus {
 	border: none;
+	outline:none;
 }
 
 .icone-ingles {
