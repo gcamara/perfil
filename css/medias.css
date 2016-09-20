@@ -4,6 +4,14 @@
         height: 650px;
     }
 
+    .mover {
+    	width: 0;
+    }
+
+    .mover-subtitulo {
+    	width: 0;
+    }
+
     .texto-eai {
         margin: auto;
     	width: 90%;
@@ -260,13 +268,6 @@
 	    margin-bottom: 5px;
 	    z-index: 1200;
 	    top: -40px;
-	}
-
-	.menu > ul li {
-	    list-style-type: none;
-	    font-family: 'Generica';
-	    font-size: 1.5em;
-	    margin-left: 30px;
 	}
 
 	li {

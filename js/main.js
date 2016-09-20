@@ -58,10 +58,8 @@
 		return id;
 	}
 
-	if (window.matchMedia('(max-width: 767px)').matches) {
-		var menuOpcoes = $('.menu > ul');
-		menuOpcoes.css('display', 'none');
-	}
+	var menuOpcoes = $('.menu > ul');
+	menuOpcoes.css('display', 'none');
 
 	$('.menu').on('click', function() {
 		if (window.matchMedia('(max-width: 767px)').matches) {
