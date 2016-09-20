@@ -25,9 +25,10 @@
 		$('#'+botao+'-menu').click(function (event) {
 			event.preventDefault();
 			event.stopImmediatePropagation();
+			menuOpcoes.css('display', 'none');
 			$('html, body').animate({
 				scrollTop: $('#'+botao).offset().top
-			}, 2000);
+			}, 2000);	
 		});
 	});
 
@@ -63,24 +64,15 @@
 
 	$('.menu').on('click', function() {
 		if (window.matchMedia('(max-width: 767px)').matches) {
-			var display = menuOpcoes.css('display');
-
-			setTimeout(function() {
-				menuOpcoes.css('display', 'block' == display ? 'none' : 'block');
-			}, 400);
-			console.log(display);
-
-			var css = menuOpcoes.css('opacity');
-			menuOpcoes.css('opacity', 1 - css);
+			var css = menuOpcoes.css('display');
+			console.log(css);
+			menuOpcoes.css('display', 'none' == css ? 'block' : 'none');
 		}
 	});
 
-	menuOpcoes.mouseout(function() {
-		menuOpcoes.css('opacity',0);
-	});
 
-	$('[id*=-menu]').on('click', function() {
-		menuOpcoes.css('opacity', 0);
+	menuOpcoes.mouseout(function() {
+		menuOpcoes.css('display', 'none');
 	});
 
 })();
