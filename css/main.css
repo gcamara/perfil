@@ -6,8 +6,6 @@ h1 {
 .jumbo-bg {
   background: url('/perfil/imgs/rubik_.png') center center;
   position: fixed;
-  width: 100%;
-  height: 350px;
   top:0;
   left:0;
   z-index: -1;
@@ -35,25 +33,9 @@ h1 {
     border-radius: 10px;
 }
 
-.card {
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px #d3d3d3 solid;
-    min-height: 250px;
-    padding: 20px;
-    min-width: 350px;
-    margin-right: 20px;
-    transition: all .2s ease-in-out;
-    background: white;
-    max-width: 350px;
-}
 .imagem {
     border-radius: 150px;
     box-shadow: 0 1px 1px 0px grey;
-    width: 120px;
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .processador {
@@ -81,7 +63,7 @@ h1 {
     box-shadow: inset 0 2px 5px 0px rgba(0,0,0,.5);
     background: white;
     width: 100%;
-    height: 650px;
+    height: 670px;
 }
 
 .projetos {
@@ -101,10 +83,6 @@ h1 {
     text-justify:inter-word;
 }
 
-.skills {
-    width: 25%;
-}
-
 .footer > div {
     margin-top: 5px;
 }
@@ -117,8 +95,6 @@ h1 {
     margin: auto;
     border-radius: 150px;
     box-shadow: 0 1px 1px 0px grey;
-    width: 300px;
-    height: 300px;
 }
 
 .foto-perfil {
@@ -245,14 +221,11 @@ h2 {
 .titulo-hobby {
     margin-left:auto;
     margin-right: auto;
-    max-width: 150px;
-    height: 30px;
     text-align: center;
     border-radius: 10px;
     background: white;
     margin-bottom: 10px;
     font-family: Generica;
-    font-size: 1.5em;
 }
 
 .starwars-texto {
@@ -339,27 +312,13 @@ h2 {
     margin-left: -50px;
 }
 
-
-.hobby {
-    width: 250px;
-    display: inline;
-}
-
 .wrapper {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .imagem-hobby {
     border-radius: 150px;
-    width: 120px;
-    height: 120px;
     margin-left: auto;
     margin-right: auto;
     -webkit-transition: transform 0.5s;
@@ -373,28 +332,34 @@ h2 {
     transform: scale(1.05);
 }
 
-@media only screen and (min-width: 768px) {
-    .sobre {
-        height: 850px;
-    }
-
-    .texto-eai {
-        margin-left: 12%;
-    }
-
-    .medalha {
-        left: 60%;
-    }
+.card {
+    margin-top: 10px;
+    border-radius: 5px;
+    background: white;
+    border: 1px #d3d3d3 solid;
+    padding: 10px;
 }
 
-@media only screen and (min-width: 1024px) {
-    .medalha {
-        left: 55%;
-    }
+.projeto-outter-wrapper {
+    position: relative; 
 }
 
-@media only screen and (min-width: 1024px) {
-    .medalha {
-        left: 55%;
-    }
+.hobbies-outter-wrapper {
+    width: 100%; 
+    position: relative;
+}
+
+.hobby {
+    margin-top: 10px;
+}
+
+.wrapper {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row; /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
 }

@@ -1,0 +1,298 @@
+/* Medias */
+@media only screen and (min-width: 320px) {
+    .sobre {
+        height: 650px;
+    }
+
+    .texto-eai {
+        margin: auto;
+    	width: 90%;
+    }
+
+    .medalha {
+        left: 60%;
+    }
+
+    .jumbo-bg, .jumbotron {
+        height: 0;
+        opacity: 0;
+        width: 0;
+    }
+
+    .jumbotron {
+    	padding-bottom: 20px;
+    }
+
+    .projetos-wrapper {
+    	display: inline;
+    	margin: auto;
+    }
+
+    .card {
+    	min-height: 50px;
+    }
+
+    .imagem {
+    	width: 32px;
+    	height: 32px;
+    	margin-left:  0;
+    	margin-right: 10px;
+    }
+
+    .foto {
+    	width: 120px;
+    	height: 120px;
+    }
+
+    h2 {
+    	font-size: 1.2em;
+    }
+
+    p {
+    	font-size: .8em;
+    }
+
+     .wrapper-sobre {
+    	margin: auto;
+    }
+
+	.skills {
+	    margin: auto;
+	    width: 90%;
+	}
+
+	.projetos {
+		height: 400px;
+		margin-top: 40px;
+	}
+
+	.imagem-hobby {
+		width: 40px;
+    	height: 40px;
+	}
+
+	.texto-sm {
+    	display: none;
+    }
+
+    .titulo-hobby {
+    	max-width: 100px;
+    	height: 20px;
+    }
+
+    .hobby {
+    	width: 120px;
+    }
+
+    .idiomas-wrapper {
+    	position: fixed;
+    	bottom: initial;
+    	top: 10;
+    	z-index: 1000;
+    	float: none;
+    	right: 10;
+    }
+
+    .menu-wrapper {
+    	position: fixed;
+    	background: rgba(108, 122, 137, .8);
+   		width: 100%;
+   		height: 50px;
+   		z-index: 999;
+    }
+
+    .menu {
+    	border-radius: 10px;
+    	width: 36px;
+    	height: 36px;
+    	background-color: rgb(108, 122, 137);
+    	top: 8px;
+    	left: 5px;
+    	cursor: hand;
+    	background-image: url('/perfil/imgs/hamb.png');
+    	background-size: 16px;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    }
+
+    .menu > ul {
+    	background: rgba(108, 122, 137, .8);
+    	border-radius: 10px;
+    	position: absolute;
+    	top: 50px;
+    	opacity: 0;
+    	transition: all .5s ease-in-out;
+    }
+
+    .menu > ul li {
+    	margin-left: -30px;
+    }
+
+    .hobby {
+    	width: 120px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .medalha {
+        left: 55%;
+    }
+
+    .jumbo-bg {
+        height: 350px;
+        opacity: 1;
+        width: 100%;
+    }
+
+    .jumbotron {
+        height: 350px;
+        opacity: 1;
+        width: 100%;
+    }
+
+    .imagem {
+   		width: 120px;
+    	height: 120px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+    .texto-eai {
+    	width: 45%;
+    }
+
+    .card {
+	    min-width: 350px;
+	    min-height: 250px;
+	    padding: 20px;
+	    margin-right: 20px;
+	    transition: all .2s ease-in-out;
+	    max-width: 350px;
+	    display: inline-block;
+	}
+
+    .textos-sm {
+    	display: block;
+    }
+
+    .projetos-wrapper {
+    	margin: auto;
+    	display: inline-flex;
+	}
+
+    .wrapper-sobre {
+		width: 100%; 
+		display: inline-flex; 
+		margin-left: auto;
+	}	
+
+	.skills {
+	    width: 25%;
+	}
+
+	.projetos {
+		padding-bottom: 150px; 
+		margin-top: -20px;
+	}
+
+	.projeto-outter-wrapper {
+		height: 450px;
+	}
+
+	.imagem-hobby {
+		width: 120px;
+    	height: 120px;
+	}
+
+	.foto {
+		width: 300px;
+    	height: 300px;
+	}
+
+	.projetos {
+		height: 500px;
+	}
+
+	.texto-sm {
+    	display: block;
+    }
+
+    .titulo-hobby {
+    	max-width: 150px;
+    	height: 30px;
+    	font-size: 1.5em;
+    }
+
+    .hobby {
+    	width: 250px;
+    }
+
+    .menu {
+    	width: 100%;
+    	border-radius: 0;
+    	background-color: transparent;
+    	background-image: none;
+    }
+
+    .menu > ul {
+	    float: right;
+	    right: 0;
+	    display: inline-block;
+	    margin: 10px 10px 0px 10px;
+	    background: none;
+	    top: -10;
+	    opacity: 1;
+	}
+
+	.idiomas-wrapper {
+	    background: rgba(108, 122, 137, .8);; 
+	    display: inline-block;
+	    position: absolute;
+	    border-radius: 10px;
+	    float: none; 
+	    right: 0; 
+	    bottom: 0; 
+	    padding-top: 5px;
+	    padding-left: 5px;
+	    padding-right: 5px;
+	    margin-right: 5px;
+	    margin-bottom: 5px;
+	    z-index: 1200;
+	    top: -40px;
+	}
+
+	.menu > ul li {
+	    list-style-type: none;
+	    font-family: 'Generica';
+	    font-size: 1.5em;
+	    margin-left: 30px;
+	}
+
+	li {
+	    display: inline-block;
+	    position: relative;
+	    padding-bottom: 3px;
+	    margin-right: 10px;
+	}
+
+	li:last-child {
+	    margin-right: 20px;
+	}
+
+	li:after {
+	    content: '';
+	    display: block;
+	    margin: auto;
+	    height: 1px;
+	    width: 0px;
+	    background: transparent;
+	    transition: width .5s ease, background-color .5s ease;
+	}
+
+	li:hover:after {
+	    width: 100%;
+	    background: #d3d3d3;
+	}
+
+}

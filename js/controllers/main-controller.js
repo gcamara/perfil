@@ -35,6 +35,7 @@
 		vm.pizza_desc = service.textos['pizza_desc'];
 		vm.programar_desc = service.textos['programar_desc'];
 		vm.idiomas_desc = service.textos['idiomas_desc'];
+		vm.skills = service.textos['skills'];
 	}
 
 })();

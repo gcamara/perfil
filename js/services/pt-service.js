@@ -18,7 +18,8 @@
 								'<p>Morei por dois meses no Chile - pra onde com certeza voltarei para visitar - e foi uma das melhores experiências que já tive. Além da língua, o país'+
 								'tem muita coisa massa, muitos lugares pra visitar, só a comida que não é das melhores.'+
 								'</p><p>Já pratiquei vários esportes, como: Judô, Jiu-jitsu e vôlei e hoje divido meu tempo entre trabalho, graduação e curso de francês e espanhol aos sábados.</p>',
-
+								
+			'skills': 			'Principais Habilidades',
 			'so': 				'Sistemas Operacionais',
 			'so_desc': 			'Trabalho criado para uma disciplina de sistemas operacionais. Consiste em executar algorítmos de escalonamento '+
 						        '<b>Round Robin, LTG e Interval-based Schedule</b>, '+

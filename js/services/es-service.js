@@ -20,7 +20,8 @@
 								'<p>Yo he vivido en Chile por dos meses - para donde, seguramente, volveré a visitar - y donde he tenido una de las mejores experiencias de mi vida. Además la lengua latina, el país '+
 								'tambien tiene muchas cosas que buenas, sitios que visitar, pero la comida no es de las mejores jeje.'+
 								'</p><p>Yo he practicado muchos esportes como: Judo, Jiu-jitsu brasileño y voleibol, pero hoy en dia divido mi tiempo entre mi empleo, mi increíblemente larga graduación y además estudo francés y español todos los sabados.</p>',
-
+								
+			'skills': 			'Principales Habilidads',
 			'so': 				'Sistemas Operacionales',
 			'so_desc': 			'Ese trabajo yo lo he creado para una asignatura de Sistemas Operacionales. Lo que hace el trabajo es exibir y ejecutar los algoritmos de escalonamiento '+
 						        '<b>Round Robin, LTG y Interval-based Schedule</b>, en una pantalla "sencilla" para el usuario '+

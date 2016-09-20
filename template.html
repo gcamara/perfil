@@ -1,12 +1,14 @@
 <!-- Menu -->
-<nav class="menu">
-	<ul>
-		<li><button id="sobre-menu">{{ main.sobre }}</button></li>
-		<li><button id="projetos-menu" href="#">{{ main.projetos }}</button></li>
-		<li><button id="certificacoes-menu" href="#">{{ main.certificacoes }}</button></li>
-		<li><button id="hobbies-menu" href="#">{{ main.hobbies }}</button></li>
-	</ul>
-</nav>
+<div class="menu-wrapper">
+	<nav class="menu">
+		<ul>
+			<li><button id="sobre-menu">{{ main.sobre }}</button></li>
+			<li><button id="projetos-menu">{{ main.projetos }}</button></li>
+			<li><button id="certificacoes-menu">{{ main.certificacoes }}</button></li>
+			<li><button id="hobbies-menu">{{ main.hobbies }}</button></li>
+		</ul>
+	</nav>
+</div>
 <div style="position: relative">
 	<div class="jumbo-bg"></div>
 	<div class="jumbotron">
@@ -38,14 +40,14 @@
 		<div class="aparecer-trabalhos">
 			<div style="margin: auto; display: inline-block">
 				<div class="foto foto-perfil"></div>
-				<div style="width: 100%; display: inline-flex; margin-left: auto;">
+				<div class="wrapper-sobre">
 					<div class="texto-eai">
 						<h2><b>{{main.eai}}</b></h2>
-						<div style="width: 60%;" ng-bind-html="main.sanitize(main.eaicontent)">
+						<div class="conteudo-eai" ng-bind-html="main.sanitize(main.eaicontent)">
 						</div>
 					</div>
 					<div class="skills">
-						<h2><b></b></h2>
+						<h2><b>{{main.skills}}</b></h2>
 						<div>
 							<h5>
 								Java
@@ -80,23 +82,23 @@
 	</div>
 </div>
 
-<div id="projetos" class="projetos" style="padding-bottom: 150px; margin-top: -20px;">
+<div id="projetos" class="projetos">
 	<div class="secao">
 		<h2 style="color:white">{{ main.projetos }}</h2>
 		<hr>
 	</div>
 
-	<div style="position: relative; height: 250px">
+	<div class="projeto-outter-wrapper">
 		<div class="aparecer-trabalhos">
 
-			<div style="margin: auto; display: inline-flex;">
+			<div class="projetos-wrapper">
 				<!-- Sistemas Operacionais -->
 				<div id="trabalho-so" class="card">
 				    <div class="imagem processador">
 				    </div>
 				    <h4>{{ main.so }}</h4>
 				    <h6 class="textos">
-				        <span ng-bind-html="main.sanitize(main.so_desc)"></span>
+				        <span class="texto-sm" ng-bind-html="main.sanitize(main.so_desc)"></span>
 				        <div id="tags" style="margin-top: 20px;">
 				        {{main.tecnologias}}:
 				            <div style="margin-top: 10px;">
@@ -115,7 +117,7 @@
 				    </div>
 				    <h4>OWL Mobile</h4>
 				    <h6 class="textos">
-				        <span ng-bind-html="main.sanitize(main.owl_desc)"></span>
+				        <span class="texto-sm" ng-bind-html="main.sanitize(main.owl_desc)"></span>
 				        <div id="tags" style="margin-top: 20px;">
 				        {{main.tecnologias}}
 				            <div style="margin-top: 10px;">
@@ -151,7 +153,7 @@
 	<div class="secao">
 		<h2>{{ main.hobbies }}</h2>
 		<hr>
-		<div style="width: 100%; position: relative;">
+		<div class="hobbies-outter-wrapper">
 			<div class="wrapper">
 				<div class="hobby">
 					<div id="tit-starwars" class="titulo-hobby starwars-texto">Starwars</div>

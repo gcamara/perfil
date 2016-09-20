@@ -58,4 +58,31 @@
 		return id;
 	}
 
+	if (window.matchMedia('(max-width: 767px)').matches) {
+		var menuOpcoes = $('.menu > ul');
+		menuOpcoes.css('display', 'none');
+	}
+
+	$('.menu').on('click', function() {
+		if (window.matchMedia('(max-width: 767px)').matches) {
+			var display = menuOpcoes.css('display');
+
+			setTimeout(function() {
+				menuOpcoes.css('display', 'block' == display ? 'none' : 'block');
+			}, 400);
+			console.log(display);
+
+			var css = menuOpcoes.css('opacity');
+			menuOpcoes.css('opacity', 1 - css);
+		}
+	});
+
+	menuOpcoes.mouseout(function() {
+		menuOpcoes.css('opacity',0);
+	});
+
+	$('[id*=-menu]').on('click', function() {
+		menuOpcoes.css('opacity', 0);
+	});
+
 })();

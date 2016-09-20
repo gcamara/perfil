@@ -19,7 +19,8 @@
 								'<p>I\'ve lived in Chile for two months - to where I\'m going to get back for a visit - and which was one of the very bests experiences I\'ve ever had. Besides the lange, the country'+
 								'has a lot a good stuff, lots of places to visit, but forget about eating a good food.'+
 								'</p><p>I\'ve practiced a many sports, such as: Judo, Brazilian Jiu-jitsu and volleyball, but nowadas I split my time between my job, my incredible-endless-hard bachelor degree and French and Spanish classes on Saturdays.</p>',
-
+								
+			'skills': 			'Main Skills',
 			'so': 				'Operational Systems',
 			'so_desc': 			'Work created for a course of operating systems. Consists mainly in execute scheduling algorithms '+
 						        '<b>Round Robin, LTG and Interval-based Schedule</b>, in a friendly user interface '+
