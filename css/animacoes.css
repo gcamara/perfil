@@ -152,11 +152,6 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-    .mover {
-        width: 550px;
-        font-size: 3em;
-    }
-
     @keyframes esquerda-direita {
         100% {
             opacity: 1;

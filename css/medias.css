@@ -299,4 +299,12 @@
 	    background: #d3d3d3;
 	}
 
+    .mover {
+        width: 550px;
+        font-size: 3em;
+    }
+
+    .mover-subtitulo {
+    	width: calc(100% - 15em);
+    }
 }
