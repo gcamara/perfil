@@ -21,17 +21,17 @@ button, button:hover, button:active, button:focus {
 }
 
 .icone-ingles {
-	background-image: url('/perfil/imgs/ic_eng.png');
+	background-image: url('/imgs/ic_eng.png');
 }
 
 .icone-portugues {
-	background-image: url('/perfil/imgs/ic_br.png');
+	background-image: url('/imgs/ic_br.png');
 }
 
 .icone-espanhol {
-	background-image: url('/perfil/imgs/ic_es.png');
+	background-image: url('/imgs/ic_es.png');
 }
 
 .icone-frances {
-	background-image: url('/perfil/imgs/ic_fr.png');
+	background-image: url('/imgs/ic_fr.png');
 }

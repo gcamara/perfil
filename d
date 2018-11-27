@@ -5,7 +5,7 @@
 [36m@@ -19,7 +19,7 @@[m
  		<meta property="og:image:width" content="210">[m
  		<meta property="og:image:height" content="250">[m
- 		<link rel="image_src" href="http://gcamara.github.io/perfil/imgs/perfil.png">[m
+ 		<link rel="image_src" href="http://gcamara.github.io/imgs.png">[m
 [31m-		<meta name="viewport" content="width=device-width, user-scalable=no	">[m
 [32m+[m		[32m<meta name="viewport" content="width=device-width, user-scalable=no">[m
  	</head>[m
