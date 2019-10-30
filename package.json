@@ -6,6 +6,6 @@
   "author"       : "Scotch",
   "dependencies" : {
     "express"    : "~4.7.2",
-    "mongoose"	 : "~1.4.0"
+    "mongoose"	 : "~5.7.7"
   }
 }
